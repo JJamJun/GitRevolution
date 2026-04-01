@@ -30,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         {
             // 스폰하고 2초 지난 후에 다시 반복하는 while문
             SpawnObstacle();
-            repeatRate = Random.Range(1f, 10f);
+            repeatRate = Random.Range(0.7f, 2f);
             yield return new WaitForSeconds(repeatRate);
         }
     }
